@@ -1,0 +1,56 @@
+.codrops-header {
+    margin: 0 auto;
+    padding: 2em;
+    background: rgb(149, 183, 30);
+    text-align: center;
+}
+.codrops-header .tetVet{
+
+}
+
+.codrops-header .tetVet p{
+	display: block;
+	margin-left: 190px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.scroller{
+	background-color: seagreen;
+}
+body{
+	background-color: red;
+}
+
+.the_level{/*The levels*/
+	background-color: rgb(149, 183, 30);
+}
+.vetImg img{
+	display: block;
+	width: 700px;
+}
+
+.codrops-demos a {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 0.5em 0.5em 0.5em 1.9em;
+	padding: 1em 1.1em;
+	width: 280px;
+	outline: none;
+	color: #fff;
+	background: #95B71E;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.pied{
+	display: inline-block;
+	width:100%;
+	margin-top: 20px;
+}
+
+.pied p{
+	text-align: center;
+}
