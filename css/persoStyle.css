@@ -1,0 +1,87 @@
+.row23{
+	margin-right: -10px;
+    margin-left: -10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.col-md-12{
+	position: relative;
+    min-height: 1px; 
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    /*width: 20%;*/
+}
+
+.x_panel{
+	position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: seagreen;
+    border: 1px solid seagreen;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.x_title{
+	border-bottom: 2px solid seagreen;
+    padding: 1px 5px 6px;
+    margin-bottom: 10px;
+}
+.x_content{
+	padding: 0 5px 6px;
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+}
+.col-md-55{
+	position: relative;
+    min-height: 1px;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+}
+.thumbnail{
+	height: 190px;
+    overflow: hidden;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.image{
+	height: 120px;
+    overflow: hidden;
+}
+.view{
+	overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px seagreen;
+    cursor: default;
+}
+.thumbnail .caption{
+	padding: 9px;
+}
+.caption{
+	padding: 9px 5px;
+    background: seagreen;
+}
