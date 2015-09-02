@@ -33,7 +33,7 @@
     transition: all .2s ease;
 }
 .x_title{
-	border-bottom: 2px solid seagreen;
+	border-bottom: 2px solid #fff;
     padding: 1px 5px 6px;
     margin-bottom: 10px;
 }
@@ -61,7 +61,8 @@
     margin-bottom: 20px;
     line-height: 1.42857143;
     background-color: seagreen;
-    border: 1px solid seagreen;
+    padding-bottom:5px;
+    border: 1px solid #fff;
     border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
