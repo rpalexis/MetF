@@ -8,6 +8,7 @@
 	$req_artisans = $bdd->query("SELECT * FROM artisans")->fetchAll();
 	$req_artistes = $bdd->query("SELECT * FROM artiste")->fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="en" class=" js csstransforms3d js csstransforms3d js csstransforms3d">
 	<head>
@@ -24,7 +25,6 @@
 			<link rel="stylesheet" type="text/css" href="css/icons.css">
 			<link rel="stylesheet" type="text/css" href="css/component.css">
 			<link rel="stylesheet" type="text/css" href="css/vetStyle.css">
-			<link rel="stylesheet" type="text/css" href="css/persoStyle.css">
 			<script src="js/modernizr.custom.js"></script>
 		
 			<style id="style-1-cropbar-clipper">
@@ -158,73 +158,35 @@
 							<p>Bitasyon Lakay</p>
 						</div>
 						</header>
-						<!--Description Artiste-->
-						<div class="row23">
-							<div class="col-md-12">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                	<?php
-                                		if(isset($_GET['art_id'])){
-                                			foreach ($req_artistes as $atis) {
-                                				if($_GET['art_id']==$atis['id']){
-                                	?>
-                                    <h2><?php echo $atis['prenom']."  ",$atis['nom']?><small> Gallerie  </small></h2>
-                                    <?php
-                                    			}
-                                    		}
-                                    	}
-                                    ?>
-                                    
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
+						<h1 style="margin:auto;">A Propos</h1>
+						<section class="block block-40 txt">
+							<div class="content clearfix ">
+									<p>
+										Lè koze Kita Nago sa a te koumanse pale nan mwa Sektanm 2012 la, gen anpil moun ki te panse li pa tap rive fèt. Poutan, nan 27 jou nou te rive travèse peyi a, soti Lèziwa rive Wanament. Nou mache 738 kilomèt apye. Sou wout la, plis pase twa milyon (3 000 000) konpatriyòt te rive mete men nan men, kole zepòl ak zepòl, pote gwo pyès bwa 500 kilo a: Kita Nago. Plis pase yon milyon kat san mil (1 400 000) moun te suiv Kita Nago sou planèt tè a, pandan tout pakou a sou fesbouk ak lòt rezo sosyal yo.
+									</p>
+									<p>
+										Apre Kita Nago te rive Wanament, anpil moun ap poze tèt yo kesyon: ki sa Kita Nago ka itil peyi a? 27 Janvye 2013 se te premye etap la. Kita Nago rafrechi memwa nou, li fè nou sonje, nou se yon pèp vanyan ki deja make listwa limanite nan bon sans. Gran jou sa nan Wanament fè nou wè: lè nou mete tèt ansanm nou kapab fè bèl mèvèy sou latè beni. Kita Nago se yon modèl viv ansanm ki bay deviz nou an plis jarèt: <strong>MEN ANPIL CHAY PA LOU</strong>. Modèl sa kapab aplike nan tout domèn lavi sosyal la..
+									</p>
+							</div>
+						</section>
 
-                                    <div class="row23">
+						<section class="block block-60 vetImg txt">
+							<br /><br /><br /><br />
+							<img src="img/vet.jpg" /><br />
 
-                                    	<?php
-	                                		if(isset($_GET['art_id'])){
-	                                			foreach ($req_artistes as $atis) {
-	                                				if($_GET['art_id']==$atis['id']){
-                                		?>
-                                        <p><?php echo $atis['texte']?></p>
-                                        <?php
-	                                    			}
-	                                    		}
-	                                    	}
-	                                    ?>
-	                                    <?php
-	                                    	//Requete pour les articles
-	                                    	if(isset($_GET['art_id'])){
-	                                    		$req_photos = $bdd->query("SELECT * FROM articles WHERE to_artiste=".$_GET['art_id']."")->fetchAll();
-	                                    		if(isset($req_photos)){
-	                                    			foreach ($req_photos as $photos) {
-	                                    ?>
-                                        <div class="col-md-55">
-                                            <div class="thumbnail">
-                                                <div class="image view view-first">
-                                                    <img style="width: 100%; display: block;" src="img/<?php echo $photos['url'];?>" alt="image">
-                                                </div>
-                                                <div class="caption">
-                                                    <p><strong><?php echo $photos['article_name'];?></strong> <?php $photos['description']; ?> <em><?php echo $photos['prix'];?></em></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                        			}
-                                        		}else{
-                                        			echo "<p>Erreur !Il n'y a pas d'articles pour cette personnes</p>";	
-                                        		}
-                                        	}else{
-                                        		echo "<p>Erreur ! Contacter l'administrateur du site</p>";
-                                        	}
-                                        ?>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-						<!--Description Artiste-->
+							<p>
+								Jodi a, nap prezante nou BiLa Bitasyon Lakay,  yon espas kap pèmèt Ayisyen sou planèt tè a rive fè Kita Nago itil tout bon vre, lè nap patisipe ak konsyans nou, ak lanmou nou pou peyi nou nan rive fè pa Kita pa Nago, nan achte chak ane pwodui ki fèt lakay pou pi piti twa san 300.00 dola ameriken ki vo kenz mil goud 15 000.00.  Sa se wòch pa nou nan konstriksyon peyi nou Ayiti cheri nou tout reve a.
+							</p>
+							<p>
+								Depi lontan, anpil Ayisyen ki deyò peyi a ap chache kouman yo kapab itil li pi byen toujou. Yo travay di san pran souf, yo rive voye plis depase 2 milya dola vèt nan peyi a chak ane. Montan lajan Ayiti poko janmen jwenn prete, alewè se ta don, nan men peyi ni bank sou latè nan yon lane. Gwo magogo sa a, pase tankou lafimen nan peyi a. Pi fò depanse nan achte manje, rad, ale lopital, peye lekòl, lwaye kay, fè maryaj, kominyon, antèman… Se prèske sou fòm sa tranzaksyon sa yo toujou fèt, pafwa tou, yon ti kraze monnen ka ale nan fè jaden oswa konsome kèk pwodui lokal. Fanmiy lòt bò dlo yo, ankouraje, toujou kontinye sipòte lòt yo nan peyi a jan nou kapab.
+							</p>
+							<p>
+								Sipò dyaspora a itil anpil, men lajan sa yo poko jwenn bon jan chimen ki pèmèt sipòte ekonomi an. Sa vle di malgre tout bon volonte nap swen djondjon pou lagon, nou gen lontan se tankou nap charye dlo nan panyen banbou.  Nap ankouraje nou fwa sa a, fè yon lòt aksyon, achte pwodui lakay pou w sèvi pandan w deyò peyi a. Fanm kon gason achte: sandal, valiz (gason, fiy), soulye, sentiwon, bous, rad (bwode, penti), chemiz (bwode, penti), pantalon, nap bwode, dra bwode, sak zorye bwode, soupla, pòt kle, pòch linèt, pòch telefòn, bijou…
+							</p>
+							<p>
+								Rale chèz ba w chita, fè yon ti kalkil tou kout epi senp. Achte pandan yon ane, pou pi piti twa san (300.00) dola ameriken ki vo kenz mil goud (15 000.00), depi nou chak dakò pou depanse lajan sa a chak ane nan achte bagay ki fèt an Ayiti epi yon milyon rive fè sa, se twa san (300 000 000.00) milyon dola vèt ki se kenz milya (15 000 000 000.00) goud kap rive antre nan ekonomi peyi a. Konsa, nap mete anvalè metye kap disparèt yo. Lajan sa a ap antre dirèk dirèk nan pòch pwodiktè yo.
+							</p>
+						</section>
 
 						<footer class="pied">
 							<p>Met Fey Vet 2015</p>

@@ -15,7 +15,7 @@
 			<meta charset="UTF-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-			<title>Manman Doudou</title>
+			<title>BiLa</title>
 			<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels">
 			<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform">
 			<meta name="author" content="Codrops">
@@ -154,8 +154,8 @@
 							  </p>
 
  						<div class="tetVet">
-							<h1>Manman Doudou Marche</h1>
-							<p>Un marche pour nos produits locaux</p>
+							<h1>BiLa</h1>
+							<p>Bitasyon Lakay</p>
 						</div>
 						</header>
 
@@ -163,9 +163,9 @@
 							<div class="content clearfix">
 								<div class="block block-40 clearfix">
 									<nav class="codrops-demos">
-										<a href="index.html">A Propos</a>
-										<a href="index2.html">Initiateur</a>
-										<a href="index3.html">Contactez-nous</a>
+										<a href="./a_propos.php">A Propos</a>
+										<a href="#">Initiateur</a>
+										<a href="#">Contactez-nous</a>
 									</nav>
 								</div>
 							</div>

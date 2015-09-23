@@ -10,7 +10,7 @@
 
 .codrops-header .tetVet p{
 	display: block;
-	margin-left: 190px;
+	margin-left: 100px;
 	text-align: center;
 	font-weight: bolder;
 }
@@ -53,4 +53,12 @@ body{
 
 .pied p{
 	text-align: center;
+}
+.txt {
+
+}
+.txt p{
+	font-size: 22px;
+	text-align: justify;
+	font-style: italic;
 }
